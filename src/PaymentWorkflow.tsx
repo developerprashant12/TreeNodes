@@ -48,7 +48,7 @@ const PaymentWorkflow: React.FC = () => {
   const [selectedProvider, setSelectedProvider] = useState<string>("");
   const [selectedAmount, setSelectedAmount] = useState<number>(10);
   const [selectedCountry, setSelectedCountry] = useState<string>("");
-  const [currentWorkflow, saveWorkflow, undo, redo] = useUndoRedo({
+  const [saveWorkflow, undo, redo] = useUndoRedo({
     nodes,
     edges,
   });
