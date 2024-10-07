@@ -4,7 +4,7 @@
 ################# First Section Setup the Project ######################
 
    # Firstly Clone the Project 
-   Url: [Payment WorkFlow](https://github.com/developerprashant12/TreeNodes.git)
+   Github Url: [Payment WorkFlow](https://github.com/developerprashant12/TreeNodes.git)
 
 
    # install node version
