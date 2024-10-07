@@ -1,3 +1,79 @@
+# Getting Started with Create React App Custom Instructions For this Project
+
+ 
+<!-- First Section Setup the Project -->
+   # Firstly Clone the Project 
+   Url: [Payment WorkFlow](https://github.com/developerprashant12/TreeNodes.git)
+
+
+   # install node version
+   Node : 16.20.2
+
+   # npm install
+
+   # npm start
+
+<!-- First Section Setup the Project -->
+
+
+
+<!--Project Explain the given Topics -->
+
+# Ouestion: A brief description of how you implemented core features like node resizing, undo/redo, and validation.
+Answer: 
+
+# Node Resizing : 
+Nodes are resizable using the react-resizable library, which provides a user-friendly interface to change the size of nodes.
+
+# Undo/Redo Functionality: 
+Implemented using a custom hook (useUndoRedo) that maintains a history of changes to the workflow state (nodes and edges). Users can undo or redo node additions, deletions, and modifications.
+
+# Node Connection Validation: 
+Connections are validated to ensure logical relationships between nodes:
+A "Payment Initialization" node can only connect to a "Payment Provider" node and vice versa.
+If a connection is invalid, the action is blocked and an alert message is shown.
+
+
+# Question: An explanation of how you implemented features such as auto-layout and node connection validation.
+Answer: 
+# Auto Layout: 
+Auto layout is implemented using the dagre library. The function handleAutoLayout arranges nodes automatically in a tree-like structure, minimizing overlapping nodes and edges. This feature can be triggered manually by the user.
+
+# Save and Load Workflow: 
+Users can save the current workflow to local storage and load it later to continue from where they left off. The state is serialized to JSON and stored in the browser's local storage.
+
+# Export/Import Workflow
+Users can export the workflow as a .json file and re-import it to restore a saved state. This allows for easy sharing and restoration of specific workflows.
+
+# Conditional Styling
+Dynamic styling is applied to nodes based on specific conditions:
+For example, if a payment initialization node has an amount above a certain threshold, its background color changes to visually indicate it.
+
+# Edge Delete Button
+A delete button (FaTrash icon) is displayed above each edge path. Clicking the button removes the respective edge, allowing for easy modification of connections.
+
+<!-- Project Explain the given Topics -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
